@@ -1,6 +1,6 @@
 # Derrick Chun's Portfolio
 
-## [Final Project: Crypto Network Analysis](https://snap.stanford.edu/data/soc-sign-bitcoin-alpha.html)
+## [Final Project: Crypto Network Analysis](https://github.com/Derrick-Chun/DS210_FinalProject)
 
 This was my final project for the course **DS 210: PROGRAMMING FOR DS** under Professor Chator at Boston University (Fall 2024). I built a Rust-based analytics engine to investigate whether higher **trust** between users in a decentralized crypto network (Bitcoin Alpha) leads to more **transaction activity**.
 
