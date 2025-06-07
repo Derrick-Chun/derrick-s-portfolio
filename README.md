@@ -75,16 +75,41 @@ jupyter notebook Chun_CDSDS110_FinalProject_Coding.ipynb
 
 ---
 
-### 📄 MA214 Final Project Paper (Statistical analysis of social media habits)
+### 📄 MA214 Final Project: Social Media Habits Analysis
 
-🔗 **Repo:** [derrick-chun/ma214-final-project](https://github.com/derrick-chun/ma214-final-project)  
-📄 **PDF:** [MA214_Final_Project_Paper.pdf](https://github.com/derrick-chun/ma214-final-project/blob/main/MA214_Final_Project_Paper.pdf)  
+🔗 **GitHub Repository:** [derrick-chun/ma214-final-project](https://github.com/derrick-chun/ma214-final-project)  
+📄 **Paper (PDF):** [MA214_Final_Project_Paper.pdf](https://github.com/derrick-chun/ma214-final-project/blob/main/MA214_Final_Project_Paper.pdf)  
 🌐 **Dataset:** https://www.kaggle.com/datasets/zeesolver/dark-web
 
-- **Course**: MA 214: Statistical Methods (BU)  
+- **Course**: MA 214: Statistical Methods (Boston University)  
 - **Language**: R  
 - **Team**: Derrick Chun, Andrew Gibson, Linh Lai, Jiakai Lin, Emily Zhao  
 
-**Goal:** Predict daily social-media usage from demographics & engagement metrics.  
-**Methods:** t-tests, ANOVA, regression, chi-square, stepwise & GLM.
+**Description:**  
+A comprehensive statistical analysis examining whether user demographics and engagement metrics can predict daily social-media usage. We applied t-tests, ANOVA, linear regression (with confidence & prediction intervals), chi-square tests, stepwise selection, and generalized linear models.
+
+**Research Question:**  
+Can demographics (age, income) and usage behaviors (video time, session count, scroll rate) accurately predict total time spent on social media?
+
+#### 🛠️ Methods
+- **Data Wrangling:** `readr` for CSV import and cleaning  
+- **Statistical Tests:**  
+  - T-test comparing life expectancy by TV density  
+  - Chi-square tests on gender, profession, platform, and watch‐reason distributions  
+- **Modeling:**  
+  - Linear regression (Total_Time_Spent ~ Video_Time)  
+  - Confidence & prediction intervals via `predict()`  
+  - Stepwise model selection (`step()`)  
+  - Generalized linear model for categorical predictors  
+
+#### 🧠 Key Findings
+- **Video time** is the only marginally significant predictor (β ≈ 0.55, p ≈ 0.04).  
+- “Habitual watch reason” shows significance in the GLM (p < 0.05).  
+- Overall, **no strong univariate predictors** beyond those two variables.
+
+#### 💾 How to View
+
+- **Read the PDF file:**  
+  [MA214_Final_Project_Paper.pdf](https://github.com/derrick-chun/ma214-final-project/blob/main/MA214_Final_Project_Paper.pdf)
+
 
