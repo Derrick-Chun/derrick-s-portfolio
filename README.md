@@ -71,3 +71,6 @@ git clone https://github.com/derrick-chun/nba-mvp-prediction.git
 cd nba-mvp-prediction
 pip install -r requirements.txt
 jupyter notebook Chun_CDSDS110_FinalProject_Coding.ipynb
+```
+
+---
