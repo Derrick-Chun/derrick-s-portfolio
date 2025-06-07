@@ -75,7 +75,7 @@ jupyter notebook Chun_CDSDS110_FinalProject_Coding.ipynb
 
 ---
 
-### 📄 MA214 Final Project: Social Media Habits Analysis
+### 📄 Social Media Habits Analysis
 
 🔗 **GitHub Repository:** [derrick-chun/ma214-final-project](https://github.com/derrick-chun/ma214-final-project)  
 📄 **Paper (PDF):** [MA214_Final_Project_Paper.pdf](https://github.com/derrick-chun/ma214-final-project/blob/main/MA214_Final_Project_Paper.pdf)  
