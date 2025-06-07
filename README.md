@@ -74,3 +74,17 @@ jupyter notebook Chun_CDSDS110_FinalProject_Coding.ipynb
 ```
 
 ---
+
+### 📄 MA214 Final Project Paper (Statistical analysis of social media habits)
+
+🔗 **Repo:** [derrick-chun/ma214-final-project](https://github.com/derrick-chun/ma214-final-project)  
+📄 **PDF:** [MA214_Final_Project_Paper.pdf](https://github.com/derrick-chun/ma214-final-project/blob/main/MA214_Final_Project_Paper.pdf)  
+🌐 **Dataset:** https://www.kaggle.com/datasets/zeesolver/dark-web
+
+- **Course**: MA 214: Statistical Methods (BU)  
+- **Language**: R  
+- **Team**: Derrick Chun, Andrew Gibson, Linh Lai, Jiakai Lin, Emily Zhao  
+
+**Goal:** Predict daily social-media usage from demographics & engagement metrics.  
+**Methods:** t-tests, ANOVA, regression, chi-square, stepwise & GLM.
+
