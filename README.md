@@ -61,6 +61,8 @@ cargo test               # Run unit tests
 cargo run                # Run analysis  
 cargo run --release      # Optimized version
 
+---
+
 ## 🏀 NBA MVP Prediction (2023–2024)
 
 🔗 [View GitHub Repo](https://github.com/derrick-chun/nba-mvp-prediction)
