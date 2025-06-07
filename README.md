@@ -1,69 +1,109 @@
 # Derrick Chun's Portfolio
 
-## [Final Project: Crypto Network Analysis](https://github.com/Derrick-Chun/DS210_FinalProject)
-
-This was my final project for the course **DS 210: PROGRAMMING FOR DS** under Professor Chator at Boston University (Fall 2024). I built a Rust-based analytics engine to investigate whether higher **trust** between users in a decentralized crypto network (Bitcoin Alpha) leads to more **transaction activity**.
+Welcome! Below are selected data science and analytics projects I’ve completed as part of my academic and independent work.
 
 ---
 
-### 🔍 Project Focus
-**Main Hypothesis**: *Does higher trust lead to higher transactions in the Bitcoin Alpha network?*
+## 🪙 Crypto Trust Network Analysis
 
-This project explores the social dimension of blockchain: the trust dynamics between pseudonymous users. Motivated by my interest in finance, digital currency, and the impact of decentralized systems, I wanted to understand how trust facilitates—or hinders—user interaction in a trust-scored crypto environment.
+🔗 [View GitHub Repo](https://github.com/Derrick-Chun/DS210_FinalProject)
+
+**Course**: DS 210: Programming for Data Science (Boston University)  
+**Instructor**: Prof. Chator  
+**Language**: Rust
+
+In this final project, I built a Rust-based analytics engine to examine whether **trust between users** in a decentralized crypto network (Bitcoin Alpha) leads to **more transaction activity**.
+
+---
+
+### 🔍 Focus
+**Research Question**: Does greater trust correlate with higher interaction in a decentralized network?
+
+Motivated by an interest in blockchain and social-financial dynamics, this project explores how trust shapes engagement in the Bitcoin Alpha trust graph.
 
 ---
 
 ### 📊 Dataset
-- **Name**: Bitcoin Alpha Trust Weighted Signed Network  
-- **Source**: [Stanford SNAP](https://snap.stanford.edu/data/soc-sign-bitcoin-alpha.html)  
-- **Nodes (Users)**: 3,783  
-- **Edge Weights**: -10 (distrust) to +10 (trust)  
-- **Positive Trust Edges**: 93%  
-
-**Citation**:  
-Kumar et al. (2016). *Edge Weight Prediction in Weighted Signed Networks*. [Link to Paper](https://cs.stanford.edu/~srijan/pubs/wsn-icdm16.pdf)
+- **Bitcoin Alpha Trust Network** from [Stanford SNAP](https://snap.stanford.edu/data/soc-sign-bitcoin-alpha.html)  
+- 3,783 nodes (users), edge weights from -10 to +10  
+- 93% of edges represent positive trust
 
 ---
 
 ### 🛠️ Tools & Techniques
-- **Language**: Rust  
-- **Libraries**: `Plotters`, `VecDeque`, `HashMap`, `rand`  
-- **Key Methods**:  
-  - Breadth-First Search (BFS) for shortest paths  
-  - Degree distribution and histogram generation  
-  - Trust-Degree correlation (scatter plot visualization)  
-  - Unit testing for metric validation
+- Rust programming  
+- Graph analysis using BFS and adjacency maps  
+- Histogram and scatter plot visualizations (`Plotters` crate)  
+- Unit-tested trust/distance metrics
 
 ---
 
-### 📈 Methodology
-- Parsed CSV of trust ratings to construct a **weighted directed graph**  
-- Built adjacency lists using `HashMap<i32, Vec<i32>>`  
-- Implemented BFS to compute **average shortest path** across sampled user pairs  
-- Calculated **degree distribution** to identify network hubs and isolated users  
-- Visualized:  
-  - `degree_distribution_histogram.png`  
-  - `trust_vs_degree.png`  
-- Tested correlation between **average trust scores** and **node degrees**  
-- Outlier analysis of users with low/high trust & activity
+### 📈 Key Methods
+- Constructed a **weighted directed graph** from CSV  
+- Ran BFS to estimate shortest paths between sampled user pairs  
+- Visualized degree distribution and trust-score correlation  
+- Analyzed trust vs. connectivity to understand network behavior
 
 ---
 
-### 🔍 Key Findings
-- Most users with **high trust scores** had **low degrees** (selective, strong ties)  
-- Users with **many connections** tended to have **moderate trust**  
-- Some nodes showed **high connectivity despite low or negative trust**, suggesting complex dynamics  
-- Results suggest that **trust does enable transactions**, but high engagement doesn’t always correlate with high trust
+### 🧠 Findings
+- Users with high trust scores tend to have **fewer but stronger ties**  
+- Highly connected users show moderate trust — possibly due to broad, shallow connections  
+- Trust facilitates interaction, but **more connections ≠ more trust**
 
 ---
 
-### 🧪 How to Run the Code
-
-> ⚙️ **Requirements**: Rust 1.77+, Plotters crate  
+### 💻 How to Run the Code
 ```bash
 git clone https://github.com/derrickchun/crypto-trust-analysis  
 cd crypto-trust-analysis/src  
-cargo test              # Run unit tests  
-cargo run               # Run analysis  
-# or for optimized performance
-cargo run --release     
+cargo test               # Run unit tests  
+cargo run                # Run analysis  
+cargo run --release      # Optimized version
+
+## 🏀 NBA MVP Prediction (2023–2024)
+
+🔗 [View GitHub Repo](https://github.com/derrick-chun/nba-mvp-prediction)
+
+**Course**: CDS DS 110 (Boston University)  
+**Language**: Python  
+**Team**: Derrick Chun, Pavan Kumar, Cole Ouyang, Kelsey Keate
+
+This group project predicts the **Top 5 NBA MVP candidates** for the 2023–2024 season using machine learning models trained on player stats and MVP voting data from 2019–2023.
+
+---
+
+### 📊 Methods
+- **Machine Learning**:  
+  - Decision Tree Classifier  
+  - K-Nearest Neighbors (k = 1–10)  
+- **Statistical Analysis**:  
+  - T-Test (PPG significance by MVP rank)  
+  - ANOVA (comparing average stats for MVPs)  
+- **Visualizations**:  
+  - Heatmaps, bar charts, scatter plots of player performance by season
+
+---
+
+### 🧠 Key Findings
+- Both ML models accurately predicted MVP candidates like **Giannis Antetokounmpo**  
+- Statistical tests confirmed **PPG and other stats significantly differ** for MVPs  
+- Some players were misclassified, suggesting limitations in stat-only models
+
+---
+
+### 🎯 Personal Contributions
+- Full code implementation for:  
+  - Decision Tree Classifier  
+  - K-Nearest Neighbors  
+  - T-Test and ANOVA  
+  - Heatmap visualizations  
+- Data cleaning, integration, and feature engineering  
+- Slide deck content, coding, and analysis writing
+
+---
+
+### 📂 Project Materials
+- 📘 [Jupyter Notebook](https://github.com/derrick-chun/nba-mvp-prediction/blob/main/Chun_CDSDS110_FinalProject_Coding.ipynb)  
+- 🖥️ [Presentation Slides (PDF)](https://github.com/derrick-chun/nba-mvp-prediction/blob/main/Chun_Kumar_Ouyang_Keate_DS110_FinalProject_Presentation.pdf)  
+- 📄 [Final Research Paper (PDF)](https://github.com/derrick-chun/nba-mvp-prediction/blob/main/Chun,%20Keate,%20Kumar,%20Ouyang_DS110%20Paper.pdf)
