@@ -44,7 +44,7 @@ cargo run --release
 
 🔗 **GitHub Repository:** [derrick-chun/nba-mvp-prediction](https://github.com/derrick-chun/nba-mvp-prediction)
 
-- **Course**: CDS DS 110: Computational Data Science (Boston University)  
+- **Course**: CDS DS 110: Intro to Data Science (Boston University)  
 - **Language**: Python  
 - **Team**: Derrick Chun, Pavan Kumar, Cole Ouyang, Kelsey Keate  
 
