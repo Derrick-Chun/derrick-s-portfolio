@@ -45,6 +45,7 @@ cargo run
 
 # Run the analysis (optimized release mode)
 cargo run --release
+```
 
 ---
 
